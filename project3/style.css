@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+}
+
+.container{
+    max-width: 1200px;
+    min-height: 620px;
+    margin: 52px auto;
+    margin: 20px;
+   
+
+}
+.grid{
+    display: grid;
+    grid-template-areas: "prince prince prince rangesh"
+                         "shivam shivam shivam rangesh"
+                         "shivam shivam shivam rangesh";
+    gap: 20px;
+}
+.box1{
+grid-area: prince;
+background: #4f8eec;
+}
+.box2{
+grid-area: shivam;
+background: #0a1e3c;
+}
+.box3{
+grid-area: rangesh;
+background-color: #005c79;
+}
+
+@media  screen and (width>1200px) {
+    
+}
+@media screen and (width>450px) and (width<1200px){
+    .grid{
+       
+        gap: 14px;
+    }
+    .container{
+        margin: 18px;
+    }
+
+}
+
+@media  screen and (width<450px) {
+    .grid{
+        grid-template-areas: 
+        "prince"
+        "prince"
+        "shivam"
+        "shivam"
+        "shivam"
+        "shivam"
+        "rangesh"
+        "rangesh"
+        "rangesh";
+        gap: 5px;
+    }
+    .container{
+        margin: 12px;
+    }
+    
+}
