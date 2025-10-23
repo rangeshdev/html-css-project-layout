@@ -1,0 +1,71 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Header (Red Bar) */
+.main-header {
+    background-color: #d92d20; /* Red color */
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* Profile Icon (Circle) */
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%; /* Makes it a circle */
+}
+
+/* Area below header */
+.main-content-area {
+    display: flex;
+    flex-grow: 1;
+    /* Takes up remaining space */
+}
+
+/* Sidebar (Blue Bar) */
+.sidebar {
+    background-color: #2b6cb0; /* Blue color */
+    width: 200px;
+}
+
+/* Content Area (White) */
+.content {
+    background-color: #ffffff; /* White color */
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    gap: 20px; /* Space between the boxes */
+}
+
+/* The two boxes inside content */
+.box {
+    border: 2px solid #8c8c8c; /* Grey border */
+    height: 120px;
+    flex-grow: 1; /* Both boxes will share the space equally */
+}
